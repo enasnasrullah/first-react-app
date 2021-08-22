@@ -1,0 +1,92 @@
+.contact {font-family: "montserrat";}
+
+.contact h2 {
+    margin-top:5rem;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2C3E50;
+}
+
+.contact .star {
+    color: #2C3E50;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact .star::before,
+.contact .star::after {
+    content: "";
+    background-color: #2C3E50;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    bottom: 45%;
+}
+
+.contact .star::before {
+    right: 53%;
+}
+
+.contact .star::after {
+    left: 53%;
+}
+
+.contact .contactForm {
+    width: 70%;
+    margin: auto;
+}
+
+.myInput {
+    margin: 2rem 0;
+}
+
+.myInput input,
+.myInput textarea {
+    border: none;
+    border-bottom: 0.1px solid #f1f1f1;
+    padding: 1rem 1rem 2rem;
+    width: 100%;
+}
+
+.myInput input:focus,
+.myInput textarea:focus {outline: none;} 
+
+.myInput input::placeholder,
+
+
+.myInput textarea::placeholder {font-size: 24px;}
+
+.myInput button {
+    background-color: #1ABC9C;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.myInput button:hover {opacity: 1;}
+
+/* Responsive Web Design */
+@media (max-width: 769px)
+{
+    .contact h2 {font-size: 40px;}
+
+    .myInput input::placeholder,
+    .myInput textarea::placeholder {font-size: 20px;}
+}
+
+@media (max-width: 992px)
+{
+    .contact .star::before {
+        right: 56%;
+    }
+    
+    .contact .star::after {
+        left: 56%;
+    }
+}

@@ -1,0 +1,82 @@
+.portfolio {font-family: "montserrat";}
+
+.portfolio h2 {
+    margin-top: 5rem;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2C3E50;
+}
+
+.portfolio .star {
+    color: #2C3E50;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+}
+
+.portfolio .star::before,
+.portfolio .star::after {
+    content: "";
+    background-color: #2C3E50;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    bottom: 45%;
+}
+
+.portfolio .star::before {
+    right: 53%;
+}
+
+.portfolio .star::after {
+    left: 53%;
+}
+
+.item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.item img {
+    border-radius: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #1ABC9C;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 9;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item:hover .overlay {opacity: 0.8;}
+
+/* Responsive Web Design */
+@media (max-width: 769px)
+{
+    .head h2 {font-size: 40px;}
+}
+
+@media (max-width: 992px)
+{
+    .portfolio .star::before {
+        right: 56%;
+    }
+    
+    .portfolio .star::after {
+        left: 56%;
+    }
+}

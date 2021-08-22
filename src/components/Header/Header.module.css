@@ -1,0 +1,62 @@
+.myHeader {
+    background-color: #1ABC9C;
+    color: #fff;
+    height: 100vh;
+    font-family: "montserrat";
+}
+
+.imgg {
+    width: 18%;
+    padding-top: 10rem;
+}
+
+.myHeader h1 {
+    margin: 2rem 0;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.myHeader .star {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.myHeader .star::before,
+.myHeader .star::after {
+    content: "";
+    background-color: #fff;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    bottom: 45%;
+}
+
+.myHeader .star::before {
+    right: 125%;
+}
+
+.myHeader .star::after {
+    left: 125%;
+}
+
+.myHeader p {
+    font-size: 24px;
+}
+
+
+/* Responsive Web Design */
+@media (max-width: 769px)
+{
+    .myHeader h1 {font-size: 50px;}
+
+    .myHeader p {font-size: 20px;}
+
+    .imgg {
+        width: 100%;
+        padding-top: 7rem;
+    }
+}

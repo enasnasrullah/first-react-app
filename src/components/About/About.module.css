@@ -1,0 +1,60 @@
+.about {
+    background-color:#1ABC9C;
+    color: #fff;
+    font-family: "montserrat";
+}
+
+.about h2 {
+    margin-top: 5rem;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about .star {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.about .star::before,
+.about .star::after {
+    content: "";
+    background-color: #fff;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    bottom: 45%;
+}
+
+.about .star::before {
+    right: 53%;
+}
+
+.about .star::after {
+    left: 53%;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/* Responsive Web Design */
+@media (max-width: 769px)
+{
+    .about h2 {font-size: 40px;}
+}
+
+@media (max-width: 992px)
+{
+    .about .star::before {
+        right: 56%;
+    }
+    
+    .about .star::after {
+        left: 56%;
+    }
+}

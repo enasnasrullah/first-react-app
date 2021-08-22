@@ -1,0 +1,67 @@
+.mainFooter {
+    background-color: #2C3E50;
+    font-family: "montserrat";
+}
+
+.item .iconContainer,
+.item .myIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .myIcon {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+
+.item .myIcon:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #2C3E50;
+}
+
+.item h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.item p {
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+/* Responsive Web Design */
+@media (max-width: 769px)
+{
+    .item {margin-bottom: 3rem;}
+
+    .item h2 {
+        margin-bottom:1rem;
+        font-size: 20px;
+    }
+
+    .item p,
+    .item .myIcon {
+        font-size: 16px;
+    }
+
+    .item .myIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .item h2 {
+        font-size: 25px;
+    }
+}
